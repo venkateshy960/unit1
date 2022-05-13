@@ -30,7 +30,7 @@ app.post("/addUser", function (req, res) {
       }
     );
     res.json({
-      data: result,
+      data: JSON.parse(result),
     });
   });
 });
